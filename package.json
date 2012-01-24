@@ -2,6 +2,7 @@
     "name"            : "mdwatch"
   , "description"     : "preview your markdown files with live update"
   , "author"          : "Xueqiao Xu <xueqiaoxu@gmail.com>"
+  , "homepage"        : "https://github.com/qiao/mdwatch"
   , "main"            : "./index.js"
   , "version"         : "0.0.1"
   , "dependencies"    : {
@@ -14,5 +15,8 @@
   }
   , "bin"             : { "mdwatch" : "./bin/mdwatch.js" }
   , "keywords"        : [ "markdown", "markup", "html", "monitor", "live", "preview" ]
-  , "tags"            : [ "markdown", "markup", "html", "monitor", "live", "preview" ]
+  , "repository"      : {
+      "type"          : "git"
+    , "url"           : "git@github.com:qiao/mdwatch.git"
+  }
 }
