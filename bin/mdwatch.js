@@ -59,7 +59,7 @@ function main(argv) {
     }
   }
 
-  if (path.resolve(__filename) === path.resolve(file)) {
+  if (file === process.argv[1]) {
     usage();
     process.exit(0);
   }
@@ -71,4 +71,4 @@ function main(argv) {
   mdwatch.watch(file, colorize, parseInt(port, 10));
 }
 
-main(process.argv);
+main(process.argv.slice());
