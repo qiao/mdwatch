@@ -1,7 +1,7 @@
 mdwatch
 =======
 
-`mdwatch` is a tool to help you preview your markdown documents. It can detect the changes on the file and automatically serve the rendered page in your brower.
+`mdwatch` is a tool to help you preview markdown documents. It watches the file for changes and will automatically serve the updated content in your browser.
 
 Install
 -------
@@ -15,16 +15,16 @@ Then, you can use `npm` to install `mdwatch`:
 Usage
 -----
 
-To monitor a markdown file, simply:
+To watch a markdown file, simply do:
 
     mdwatch FILENAME
 
-This will start a webserver on port 3000. Now navigate your browser to `http://localhost:3000`, you will see the rendered document.
+This will start a web server on port 3000. Navigate your browser to `http://localhost:3000` and you will see the rendered document. Now try to edit and save the markdown file, and you will see the content in your browser updated.
 
-You may use `-p` to specify another port.
+If you want the server to listen on another port, then you may use the `-p` option.
 
     mdwatch -p 8080 FILENAME
 
-`mdwatch` also supports syntax highlighting. To enable it, you have to install `python2.x` and `pygments` first, then use `-c` to colorize the code blocks.
+`mdwatch` can also colorize your code blocks. To do so, you will have to install `python` and `pygments` first. And use the `-c` option:
 
     mdwatch -c FILENAME

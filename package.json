@@ -1,6 +1,6 @@
 {
     "name"            : "mdwatch"
-  , "description"     : "preview your markdown files with live update"
+  , "description"     : "preview markdown document with live updates"
   , "author"          : "Xueqiao Xu <xueqiaoxu@gmail.com>"
   , "homepage"        : "https://github.com/qiao/mdwatch"
   , "main"            : "./index.js"
