@@ -1,7 +1,8 @@
 var MdWatch = (function() {
-  var socket
-    , config
-    , $container;
+
+  var socket;
+  var config;
+  var $container;
 
   function init(container) {
     // set main document container
@@ -35,13 +36,13 @@ var MdWatch = (function() {
     $('code').each(function(idx, ele) {
       if (ele.className) {
         $.ajax({
-            url     : '/colorize'
-          , type    : 'post'
-          , data    : {
-              html  : $(ele).text()
-            , lang  : ele.className
-          }
-          , success : function(data) {
+          url: '/colorize',
+          type: 'post',
+          data: {
+            code: $(ele).text(),
+            lang: ele.className
+          },
+          success: function(data) {
             $(ele).parent().replaceWith($(data));
           }
         });
