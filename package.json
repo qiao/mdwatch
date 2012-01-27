@@ -9,8 +9,8 @@
       "express"       : "2.5.5"
     , "jade"          : ">= 0.20.0"
     , "socket.io"     : ">= 0.8.7"
-    , "marked"        : ">= 0.1.7"
-    , "pygments"      : ">= 0.1.1"
+    , "marked"        : ">= 0.1.8"
+    , "pygments"      : ">= 0.1.2"
   }
   , "bin"             : { "mdwatch" : "./bin/mdwatch.js" }
   , "keywords"        : [ "markdown", "markup", "html", "monitor", "live", "preview" ]
