@@ -5,4 +5,9 @@ body {
   width: 914px;
   margin: 40px auto;
   min-height: 600px;
+  padding: 0px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+#readme .markdown-body {
+  border: none;
 }
