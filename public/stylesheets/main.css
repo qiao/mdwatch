@@ -1,11 +1,8 @@
 body {
   background-color: #eee;
 }
-#main {
-  width: 740px;
-  min-height: 600px;
+#readme {
+  width: 914px;
   margin: 40px auto;
-  background-color: #fff;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.30);
-  padding: 30px;
+  min-height: 600px;
 }
