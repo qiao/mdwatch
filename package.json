@@ -4,7 +4,7 @@
   , "author"          : "Xueqiao Xu <xueqiaoxu@gmail.com>"
   , "homepage"        : "https://github.com/qiao/mdwatch"
   , "main"            : "./index.js"
-  , "version"         : "0.0.5"
+  , "version"         : "0.0.6"
   , "dependencies"    : {
       "express"       : "2.5.5"
     , "jade"          : ">= 0.20.0"
