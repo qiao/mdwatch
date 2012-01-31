@@ -1,7 +1,7 @@
 mdwatch
 =======
 
-`mdwatch` is a tool to help you preview markdown documents. It watches the file for changes and will automatically serve the updated content in your browser.
+`mdwatch` is a tool to help you preview markdown documents. It will watch the file for changes and automatically serve the updated content in your browser.
 
 Install
 -------
