@@ -1,14 +1,37 @@
 body {
   background-color: #eee;
+  font: 13px helvetica,arial,freesans,clean,sans-serif;
 }
-#readme {
-  width: 914px;
-  margin: 40px auto;
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+li {
+  color: #404040;
+  margin: 7px 0;
+}
+code {
+  background-color: #f5f5f5;
+  border: 1px solid #eaeaea;
+  padding: 0;
+  font-family: "Bitstream Vera Sans Mono", monospace;
+}
+p>code, li>code {
+  border: 1px solid #ccc;
+  padding: 0px 3px;
+  margin: 0 2px;
+  border-radius: 0;
+}
+pre {
+  border-radius: 0;
+}
+#main {
+  font-size: 14px;
+  line-height: 1.6;
+  width: 840px;
   min-height: 600px;
-  padding: 0px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  background: #fff;
-}
-#readme .markdown-body {
-  border: none;
+  margin: 40px auto;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.30);
+  padding: 30px;
 }
