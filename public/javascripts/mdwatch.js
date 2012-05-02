@@ -34,13 +34,13 @@ var MdWatch = (function() {
     // the server will respond with the colorized html,
     // then replace the parent(a `pre` node) of current node with the colorized one.
     $('code').each(function(idx, ele) {
-      if (ele.className) {
+      if (ele.className.indexOf('lang-') !== -1) {
         $.ajax({
           url: '/colorize',
           type: 'post',
           data: {
             code: $(ele).text(),
-            lang: ele.className
+            lang: ele.className.slice(5)
           },
           success: function(data) {
             $(ele).parent().replaceWith($(data));
