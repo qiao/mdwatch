@@ -1,14 +1,20 @@
 #!/usr/bin/env node
 
-var path    = require('path');
 var mdwatch = require('../');
+
+var existsSync;
+if (process.version.indexOf('v0.8') === 0) {
+  existsSync = require('fs').existsSync;
+} else {
+  existsSync = require('path').existsSync;
+}
 
 function usage(mes) {
   if (mes) {
     console.log(mes + '\n');
   }
-  lines = [
-    'Usage:                                    ', 
+  var lines = [
+    'Usage:                                    ',
     '  mdwatch [-pch] file                     ',
     '                                          ',
     'Options:                                  ',
@@ -63,7 +69,7 @@ function main(argv) {
     usage();
     process.exit(0);
   }
-  if (!path.existsSync(file)) {
+  if (!existsSync(file)) {
     usage('File not exists: ' + file);
     process.exit(1);
   }
