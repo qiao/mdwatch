@@ -1,13 +1,7 @@
 #!/usr/bin/env node
 
 var mdwatch = require('../');
-
-var existsSync;
-if (process.version.indexOf('v0.8') === 0) {
-  existsSync = require('fs').existsSync;
-} else {
-  existsSync = require('path').existsSync;
-}
+var existsSync = require('fs').existsSync || require('path').existsSync;
 
 function usage(mes) {
   if (mes) {
